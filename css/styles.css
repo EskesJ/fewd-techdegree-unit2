@@ -59,9 +59,6 @@ h2 {
 
 
 /* ---main--- */
-.test {
-  margin-top: 60px;
-}
 
 .main-header {
   text-align: center;
@@ -78,7 +75,7 @@ h2 {
 header img {
   display: block;
   width: 65%;
-  margin: 8em auto 1.5em;
+  margin: 4em auto 1.5em;
 }
 
 main img {
@@ -137,16 +134,47 @@ footer ul {
   padding-top: 1.5em;
 }
 
+.footer-link {
+  display: none;
+}
+
 /* ---Media queries--- */
 
 @media (min-width: 768px) {
 
+
   h1 {
-    display: inline-block;
-    float: left;
+    margin-top: 30px;
   }
 
-  .main-navigation ul {
+  header ul,
+  header li {
+    display: inline-block;
+    background-color: inherit;
+  }
+
+  header li {
+    padding: 0 27px 0;
+  }
+
+  .test {
+    margin-top: 50px;
+  }
+
+  header p {
+    font-size: 1.2em;
+  }
+
+  .header-wrap {
+    padding-bottom: 30px;
+  }
+
+  /* h1 {
+    display: inline-block;
+    float: left;
+  } */
+
+  /* .main-navigation ul {
     display: inline-block;
     float: right;
     width: 25%;
@@ -155,7 +183,7 @@ footer ul {
 header li,
 header a {
   display: inline;
-}
+  background-color: inherit; */
 
   header p {
     float: left;
@@ -185,6 +213,21 @@ header a {
     float: right;
     width: 50%;
   }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .footer-link {
+    display: inline-block;
+  }
+
+  footer li {
+    padding-left: 25px;
+  }
+
+
+
 
 }
 
